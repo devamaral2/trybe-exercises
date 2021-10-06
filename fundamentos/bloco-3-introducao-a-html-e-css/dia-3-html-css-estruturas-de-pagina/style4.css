@@ -1,5 +1,5 @@
 div {
-    width: 160px;
+    width: 180px;
     height: 50px;
     margin: 30px;
 }
@@ -13,4 +13,11 @@ div:hover {
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+li {
+    list-style: none;
+    list-style-position:unset;
+}
+li:nth-child(odd) {
+    font-style: italic;
 }
