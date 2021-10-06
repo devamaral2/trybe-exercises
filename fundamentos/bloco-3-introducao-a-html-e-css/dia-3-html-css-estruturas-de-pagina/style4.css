@@ -3,11 +3,13 @@ div {
     height: 50px;
     margin: 30px;
 }
+
 div:hover {
     border-color:chartreuse;
     border-width: 5px;
     border-style: solid;
 }
+
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
