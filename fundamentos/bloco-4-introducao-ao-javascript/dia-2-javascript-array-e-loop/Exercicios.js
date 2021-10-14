@@ -39,7 +39,7 @@ for (let i = 0; i<numbers.length; i++) {
     numerosImpares++}
     }
 if (numerosImpares === 0) {
-    console.log("nenhum valor impar encontrado")
+    console.log("nenhum valor impar encontrado");
 } else {
 console.log(numerosImpares);
 }
@@ -54,16 +54,17 @@ for (let i = 0; i<numbers.length; i++) {
 console.log(numeroMenor);
 
 //Exercicio 8
-let arr = []
+let arr = [];
 for (let i = 1; i<26; i++) {
-    arr.push(i)
+    arr.push(i);
 }
-console.log(arr)
-
+console.log(arr);
+console.log("aqui");
 //Exercicio 9
+let resultado = 0;
 let arrDividido = [];
 for (let i = 0; i<arr.length; i++) {
-    let resultado = arr[i] / 2;
+    resultado = arr[i] / 2;
     arrDividido.push(resultado);
 }
 console.log(arrDividido);
@@ -96,6 +97,35 @@ for (let i = 1; i < numeros.length; i++) {
   }
 console.log(arrayum);
 
+//Forma mais simples
+
+let arrayNovo = [5,9,3,19,70,8,100,2,35,27];
+for (let i = 0; i < arrayNovo.length - 1; i++) {
+    for (let x = 0; x < arrayNovo.length - i -1; x++) {
+      if (arrayNovo[x] > arrayNovo[x +1]) {
+        let position = arrayNovo[x];
+        arrayNovo[x] = arrayNovo[x+1];
+        arrayNovo[x+1] = position;
+      }
+    }
+}
+console.log(arrayNovo);
+
+//Invertido
+console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa")
+let arrayInvertido = [5,9,3,19,70,8,100,2,35,27];
+for (let i = arrayInvertido.length - 1; i>= 0; i--) {
+    for (let x = arrayInvertido.length - 1; x>=0 ; x--) {
+      if (arrayInvertido[x - 1] > arrayInvertido[x]) {
+        let position = arrayInvertido[x - 1];
+        arrayInvertido[x - 1] = arrayInvertido[x];
+        arrayInvertido[x] = position;
+      }
+    }
+}
+console.log(arrayInvertido);
+
+
 //Bonus 2
 let arraydois = [5,9,3,19,70,8,100,2,35,27];
 for (let i = 1; i < arraydois.length; i++) {
@@ -109,6 +139,7 @@ for (let i = 1; i < arraydois.length; i++) {
     }
 }
 console.log(arraydois);
+
 
 //Bonus 3
 let numbersVezes = [];
