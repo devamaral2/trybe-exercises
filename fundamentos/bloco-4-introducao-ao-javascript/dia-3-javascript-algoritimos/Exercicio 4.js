@@ -10,7 +10,7 @@ for (var i = 1; i<=3; i++) {
          } else {
              vazio = vazio + espaco;
          }
-        } if (i = 2) {
+        } else if (i = 2) {
             if (x>=2 && x<=4) {
               vazio = vazio + asterisco;
          } else {
@@ -18,7 +18,7 @@ for (var i = 1; i<=3; i++) {
          }
      } else {
     vazio = vazio + asterisco;
-     }
-    console.log(vazio); 
+     } 
     }
-} 
+    console.log(vazio); 
+}
