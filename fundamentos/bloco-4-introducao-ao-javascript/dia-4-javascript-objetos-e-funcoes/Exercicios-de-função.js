@@ -199,3 +199,7 @@ function verificaFPalavra(palavra, fimPalavra) {
 }
 console.log(verificaFPalavra('trybe', 'be')); //true
 console.log(verificaFPalavra('joaofernando', 'fernan')); //false
+
+//Exercicio bonus três
+
+function quantasFrutas (frutas)
