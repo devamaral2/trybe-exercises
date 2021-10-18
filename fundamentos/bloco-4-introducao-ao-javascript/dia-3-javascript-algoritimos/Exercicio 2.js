@@ -1,4 +1,4 @@
-//Exercicio 2 de algoritimo
+//Exercicio 2 
 let n = 5;
 let asterisco = '*'
 let vazio ='"'
