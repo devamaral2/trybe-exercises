@@ -1,0 +1,11 @@
+document.getElementById("header-container").style.backgroundColor = 'green' 
+document.body.style.backgroundColor = 'gainsboro'
+document.getElementById("footer-container").style.backgroundColor = 'black'
+document.getElementsByClassName("emergency-tasks")[0].style.backgroundColor = 'orange'
+let x = document.querySelectorAll(".emergency-tasks h3")
+x[0].style.backgroundColor = 'purple'
+x[1].style.backgroundColor = 'purple'
+document.getElementsByClassName("no-emergency-tasks")[0].style.backgroundColor = 'yellow'
+let y = document.querySelectorAll(".no-emergency-tasks h3")
+y[0].style.backgroundColor = 'black'
+y[1].style.backgroundColor = 'black'
