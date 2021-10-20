@@ -18,4 +18,3 @@
         document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
         document.getElementsByClassName("title")[0].innerText = 'Exercicio 5.1 - Javascript';
         
-     
