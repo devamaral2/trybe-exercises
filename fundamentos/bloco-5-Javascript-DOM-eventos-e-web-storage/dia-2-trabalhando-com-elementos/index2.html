@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+       .main-content .center-content { 
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+       } 
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      } 
+    </style>
+  </head>
+  <body>
+    <script>
+       function criarElementos (tipo, pai, classe) {
+       let elemento = document.createElement(tipo);
+       pai.appendChild(elemento);
+       elemento.className = classe; 
+       }
+       let corpo = document.querySelector('body');
+       criarElementos ('h1', corpo, "title");
+       criarElementos ('main', corpo, 'main-content');
+       let principal = document.querySelector('main');
+       criarElementos ('section', principal, 'center-content');
+       let secao = document.querySelector('.center-content');
+       criarElementos ('p', secao, 'paragrafo');
+       document.querySelector('p').innerText = 'Teste, teste'; 
+       criarElementos ('section', principal, 'left-content');
+       criarElementos ('section', principal, 'right-content');
+       let conteudoEsquerda = document.querySelector('.left-content')
+       criarElementos ('img', conteudoEsquerda, 'small-image');
+       criarElementos ('ol', 'right-content', 'lista');
+       //let listaNaoOrdenada = document.querySelector('.lista');
+       //let itensDaLista = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+       //for (let i = 0, i < 11, x += 1) {
+         criarElementos ('li', listaNaoOrdenada,'elemento.lista') {
+        /document.querySelectorAll(li)[i].innerText = itensDaLista[i]
+        // }
+        principal.removeChild(document.querySelector('.left-content'))
+       let imagem =document.getElementsByTagName('img')[0];
+       imagem.src = "https://picsum.photos/200";
+       document.querySelector('p').innerText = "Exercício 5.2 - JavaScript DOM ";
+       document.querySelector('h1').innerText = "Exercício 5.2 - JavaScript DOM ";
+       
+    </script>
+  </body>
+</html>
