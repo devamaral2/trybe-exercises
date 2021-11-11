@@ -1,0 +1,19 @@
+h1, p {
+    text-align: center;
+}
+
+.listaum {
+    color: black
+}
+
+.listaum li:hover {
+ background-color: red;
+    }
+
+.listaum li:active {
+    color: blue
+}
+
+li {
+    list-style: none;
+}
