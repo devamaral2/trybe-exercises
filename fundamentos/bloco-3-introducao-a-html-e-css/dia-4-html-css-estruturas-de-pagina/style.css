@@ -1,0 +1,40 @@
+  * {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .all {
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+  }
+
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    width: 200px;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);  
+  }
+
+  li {
+      list-style: none;
+  }
+  
+  .all {
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+  }
