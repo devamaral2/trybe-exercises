@@ -21,8 +21,15 @@ CREATE TABLE IF NOT EXISTS books (
     book_name VARCHAR(100)
 );
 
+CREATE TABLE IF NOT EXISTS contacts (
+  author_id INT NOT NULL,
+  contact VARCHAR(15),
+  FOREIGN KEY (author_id) REFERENCES authors (id)
+);
+
 INSERT INTO 
   books (book_name)
 VALUES 
   ('Seu Sergio e Capitu'),
   ('Destro e Canhoto');
+
