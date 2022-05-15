@@ -1,6 +1,6 @@
 
 const Cep = require('../models/CepModel');
-/* const ViaCep = require('../models/viaCep'); */
+const ViaCep = require('../models/viaCep');
 
 const CEP_REGEX = /\d{5}-?\d{3}/;
 
